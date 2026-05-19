@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Use Viradiya Associates' real-time loan EMI calculator to estimate monthly EMI, total interest, and payment schedule. Plan your finances with instant results.">
+  <meta name="keywords" content="EMI calculator, loan calculator, home loan EMI, business loan EMI, interest calculator, Viradiya Associates">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://viradiyaassociates.co.in/loan-calculator">
+  <link rel="icon" type="image/png" href="/images/company_logo.png">
+  <title>Loan EMI Calculator | Viradiya Associates Private Limited</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans antialiased text-slate-800 overflow-x-hidden">
+
+  <div id="navbar-container"></div>
+
+  <!-- Page Header -->
+  <section class="relative py-24 bg-gradient-to-br from-indigo-600 via-purple-600 to-indigo-700 overflow-hidden">
+    <div class="absolute inset-0 dots-pattern opacity-20"></div>
+    <div class="gradient-blob blob-1 -top-20 -right-20 opacity-20"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <span class="fade-up inline-flex items-center px-3 py-1 bg-white/20 text-white rounded-full text-sm font-semibold mb-4">Financial Tool</span>
+      <h1 class="fade-up stagger-1 text-4xl sm:text-5xl font-extrabold text-white mb-4">Loan EMI Calculator</h1>
+      <p class="fade-up stagger-2 text-xl text-indigo-200 max-w-2xl mx-auto">Plan your finances with real-time EMI calculations and visual breakdowns</p>
+      <div class="fade-up stagger-3 flex items-center justify-center gap-2 text-indigo-200 text-sm mt-6">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        <span class="text-white">Loan Calculator</span>
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0">
+      <svg viewBox="0 0 1440 80" fill="none" class="w-full"><path d="M0 40C360 80 720 0 1080 40C1260 60 1380 50 1440 40V80H0V40Z" fill="white"/></svg>
+    </div>
+  </section>
+
+  <!-- Calculator Section -->
+  <section class="py-24 relative overflow-hidden bg-gradient-to-br from-white via-indigo-50/20 to-white">
+    <div class="gradient-blob blob-2 top-20 right-0 opacity-8"></div>
+    <div class="gradient-blob blob-3 bottom-20 left-0 opacity-8"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-5 gap-12">
+        
+        <!-- Calculator Inputs (3 cols) -->
+        <div class="lg:col-span-3">
+          <div class="glass-card p-8 sm:p-10 space-y-10">
+            <h2 class="text-2xl font-extrabold text-slate-900 flex items-center gap-3">
+              <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+              </div>
+              Calculate Your EMI
+            </h2>
+
+            <!-- Loan Amount -->
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <label class="text-sm font-semibold text-slate-700">Loan Amount</label>
+                <div class="flex items-center gap-1">
+                  <span class="text-sm text-slate-500">₹</span>
+                  <input type="number" id="loanAmountInput" value="2500000" min="100000" max="100000000" step="50000" class="w-36 text-right text-sm font-semibold text-indigo-700 bg-indigo-50 rounded-lg px-3 py-2 border border-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+              </div>
+              <input type="range" id="loanAmountRange" min="100000" max="100000000" step="50000" value="2500000">
+              <div class="flex justify-between text-xs text-slate-400">
+                <span>₹ 1 Lakh</span>
+                <span>₹ 10 Crore</span>
+              </div>
+            </div>
+
+            <!-- Interest Rate -->
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <label class="text-sm font-semibold text-slate-700">Interest Rate (% p.a.)</label>
+                <div class="flex items-center gap-1">
+                  <input type="number" id="interestRateInput" value="10.5" min="1" max="30" step="0.1" class="w-24 text-right text-sm font-semibold text-indigo-700 bg-indigo-50 rounded-lg px-3 py-2 border border-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                  <span class="text-sm text-slate-500">%</span>
+                </div>
+              </div>
+              <input type="range" id="interestRateRange" min="1" max="30" step="0.1" value="10.5">
+              <div class="flex justify-between text-xs text-slate-400">
+                <span>1%</span>
+                <span>30%</span>
+              </div>
+            </div>
+
+            <!-- Loan Tenure -->
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <label class="text-sm font-semibold text-slate-700">Loan Tenure (Years)</label>
+                <div class="flex items-center gap-1">
+                  <input type="number" id="loanTenureInput" value="15" min="1" max="30" step="1" class="w-24 text-right text-sm font-semibold text-indigo-700 bg-indigo-50 rounded-lg px-3 py-2 border border-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                  <span class="text-sm text-slate-500">Yrs</span>
+                </div>
+              </div>
+              <input type="range" id="loanTenureRange" min="1" max="30" step="1" value="15">
+              <div class="flex justify-between text-xs text-slate-400">
+                <span>1 Year</span>
+                <span>30 Years</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Amortization Preview -->
+          <div class="glass-card p-8 mt-8">
+            <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+              <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+              Repayment Schedule
+            </h3>
+            <div id="amortizationPreview"></div>
+          </div>
+        </div>
+
+        <!-- Results (2 cols) -->
+        <div class="lg:col-span-2 space-y-8">
+          <!-- EMI Result Card -->
+          <div class="glass-card p-8 bg-gradient-to-br from-indigo-50 to-purple-50">
+            <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2">Monthly EMI</h3>
+            <div id="emiResult" class="text-4xl font-extrabold gradient-text">₹ 0</div>
+          </div>
+
+          <!-- Breakdown Cards -->
+          <div class="grid grid-cols-1 gap-4">
+            <div class="glass-card p-6 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-4 h-4 bg-indigo-500 rounded-full"></div>
+                <span class="text-sm font-medium text-slate-700">Principal Amount</span>
+              </div>
+              <span id="principalResult" class="text-lg font-bold text-slate-900">₹ 0</span>
+            </div>
+            <div class="glass-card p-6 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-4 h-4 bg-cyan-500 rounded-full"></div>
+                <span class="text-sm font-medium text-slate-700">Total Interest</span>
+              </div>
+              <span id="interestResult" class="text-lg font-bold text-slate-900">₹ 0</span>
+            </div>
+            <div class="glass-card p-6 flex items-center justify-between bg-gradient-to-r from-indigo-50 to-purple-50">
+              <div class="flex items-center gap-3">
+                <div class="w-4 h-4 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-full"></div>
+                <span class="text-sm font-semibold text-slate-700">Total Payment</span>
+              </div>
+              <span id="totalResult" class="text-xl font-extrabold gradient-text">₹ 0</span>
+            </div>
+          </div>
+
+          <!-- Pie Chart -->
+          <div class="glass-card p-8 flex flex-col items-center">
+            <h3 class="text-lg font-bold text-slate-900 mb-6">Payment Breakdown</h3>
+            <div class="pie-chart mb-6">
+              <svg width="200" height="200" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="70" fill="none" stroke="#e2e8f0" stroke-width="30"/>
+                <circle id="pieSlice1" cx="100" cy="100" r="70" fill="none" stroke="#6366f1" stroke-width="30" stroke-dasharray="0 440" stroke-linecap="round" style="transition: stroke-dasharray 0.5s ease"/>
+                <circle id="pieSlice2" cx="100" cy="100" r="70" fill="none" stroke="#06b6d4" stroke-width="30" stroke-dasharray="0 440" stroke-linecap="round" style="transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease"/>
+                <text id="pieCenterText" x="100" y="105" text-anchor="middle" class="text-2xl font-bold" fill="#1e293b">0%</text>
+              </svg>
+            </div>
+            <div class="flex items-center gap-8">
+              <div class="flex items-center gap-2">
+                <div class="w-3 h-3 bg-indigo-500 rounded-full"></div>
+                <span class="text-sm text-slate-600">Principal <span id="legendPrincipal" class="font-semibold text-slate-800">0%</span></span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-3 h-3 bg-cyan-500 rounded-full"></div>
+                <span class="text-sm text-slate-600">Interest <span id="legendInterest" class="font-semibold text-slate-800">0%</span></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Apply CTA -->
+          <div class="glass-card p-6 bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-center">
+            <h3 class="text-lg font-bold mb-2">Like What You See?</h3>
+            <p class="text-indigo-200 text-sm mb-4">Apply now and get the best rates from our banking partners.</p>
+            <a href="contact.html" class="inline-flex items-center gap-2 px-6 py-3 bg-white text-indigo-700 font-bold rounded-xl hover:shadow-xl transition-all text-sm">
+              Apply Now
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="py-24 relative overflow-hidden bg-gradient-to-br from-slate-50 via-indigo-50/30 to-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="fade-up text-3xl font-extrabold text-slate-900">How EMI <span class="gradient-text">Calculation Works</span></h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="fade-up glass-card p-8 text-center">
+          <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center text-white text-2xl font-bold">1</div>
+          <h3 class="text-lg font-bold text-slate-900 mb-3">Enter Loan Details</h3>
+          <p class="text-slate-600 text-sm">Input your loan amount, interest rate, and preferred tenure using sliders or direct input.</p>
+        </div>
+        <div class="fade-up stagger-1 glass-card p-8 text-center">
+          <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-2xl flex items-center justify-center text-white text-2xl font-bold">2</div>
+          <h3 class="text-lg font-bold text-slate-900 mb-3">Get Instant Results</h3>
+          <p class="text-slate-600 text-sm">See your monthly EMI, total interest, and total payment calculated in real-time.</p>
+        </div>
+        <div class="fade-up stagger-2 glass-card p-8 text-center">
+          <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center text-white text-2xl font-bold">3</div>
+          <h3 class="text-lg font-bold text-slate-900 mb-3">Apply for Best Rates</h3>
+          <p class="text-slate-600 text-sm">Contact us to get even better rates from our banking partners and start your loan journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
