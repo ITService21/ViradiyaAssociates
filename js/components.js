@@ -26,19 +26,13 @@ function renderNavbar() {
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar fixed top-0 left-0 right-0 z-[1000] bg-white/80 backdrop-blur-lg border-b border-slate-100/50" id="mainNav">
+    <nav class="navbar fixed top-0 left-0 right-0 z-[1000] bg-white border-b border-slate-200" id="mainNav">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-20">
           
           <!-- Logo -->
           <a href="index.html" class="flex items-center space-x-3 flex-shrink-0">
-            <div class="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-xl flex items-center justify-center">
-              <span class="text-white font-bold text-lg">V</span>
-            </div>
-            <div class="hidden sm:block">
-              <span class="text-lg font-bold text-slate-800 leading-tight block">Viradiya Associates</span>
-              <span class="text-[10px] text-slate-500 tracking-wider uppercase">Private Limited</span>
-            </div>
+            <img src="images/company_logo.jpeg" alt="Viradiya Associates" class="h-12 w-auto object-contain">
           </a>
 
           <!-- Desktop Nav -->
@@ -52,7 +46,7 @@ function renderNavbar() {
                 About Us
                 <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </a>
-              <div class="nav-dropdown absolute top-full left-0 mt-2 w-72 bg-white rounded-2xl shadow-2xl border border-slate-100 p-3 z-[1001]">
+              <div class="nav-dropdown absolute top-full left-0 pt-2 w-72 z-[1001]"><div class="bg-white rounded-2xl shadow-2xl border border-slate-100 p-3">
                 <a href="about.html#overview" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-indigo-50 transition-all group">
                   <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center group-hover:bg-indigo-200 transition-colors">
                     <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
@@ -80,7 +74,7 @@ function renderNavbar() {
                     <span class="text-xs text-slate-500">Meet our directors</span>
                   </div>
                 </a>
-              </div>
+              </div></div>
             </div>
 
             <!-- Services Dropdown -->
@@ -89,7 +83,7 @@ function renderNavbar() {
                 Services
                 <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </a>
-              <div class="nav-dropdown absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[560px] bg-white rounded-2xl shadow-2xl border border-slate-100 p-4 z-[1001]">
+              <div class="nav-dropdown absolute top-full left-1/2 -translate-x-1/2 pt-2 w-[560px] z-[1001]"><div class="bg-white rounded-2xl shadow-2xl border border-slate-100 p-4">
                 <div class="grid grid-cols-2 gap-2">
                   <a href="services.html#home-loans" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-indigo-50 transition-all group">
                     <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
@@ -146,7 +140,7 @@ function renderNavbar() {
                     </div>
                   </a>
                 </div>
-              </div>
+              </div></div>
             </div>
 
             <a href="partners.html" class="nav-link px-4 py-2 rounded-lg text-sm font-medium ${isActive('partners')} hover:text-indigo-600 hover:bg-indigo-50 transition-all duration-200">Partners</a>
@@ -319,14 +313,8 @@ function renderFooter() {
           
           <!-- Company Info -->
           <div class="lg:col-span-1">
-            <div class="flex items-center space-x-3 mb-6">
-              <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center">
-                <span class="text-white font-bold text-xl">V</span>
-              </div>
-              <div>
-                <span class="text-lg font-bold text-white block">Viradiya Associates</span>
-                <span class="text-xs text-indigo-300 tracking-wider uppercase">Private Limited</span>
-              </div>
+            <div class="flex justify-start space-x-3 mb-6 bg-[#ffffff] rounded-lg p-2 mr-[40px]">
+              <img src="images/company_logo.jpeg" alt="Viradiya Associates" class="mx-auto h-12 w-auto object-contain rounded">
             </div>
             <p class="text-slate-400 text-sm leading-relaxed mb-6">Simplifying Business, Amplifying Growth. Your trusted partner for transparent, reliable, and customized financial solutions across India.</p>
             <div class="flex items-center gap-3">

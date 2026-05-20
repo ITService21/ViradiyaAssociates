@@ -48,7 +48,7 @@ function initEnquiryForm() {
     `;
 
     try {
-      const response = await fetch('https://piwebtechnology.com/send-form-mail?company=growstartup', {
+      const response = await fetch('https://piwebtechnology.com/send-form-mail?company=viradiyaassociates', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
