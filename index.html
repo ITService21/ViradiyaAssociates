@@ -15,8 +15,8 @@
   <meta name="twitter:title" content="Viradiya Associates Private Limited">
   <meta name="twitter:description" content="Reliable Financial Solutions with Integrity and Expertise.">
   <link rel="canonical" href="https://viradiyaassociates.co.in">
-  <link rel="icon" type="image/jpeg" href="images/company_logo.jpeg">
-  <link rel="apple-touch-icon" href="images/company_logo.jpeg">
+  <link rel="icon" type="image/jpeg" href="images/company_logo_only.jpeg">
+  <link rel="apple-touch-icon" href="images/company_logo_only.jpeg">
   <title>Viradiya Associates Private Limited | Trusted Loan Consultancy & Financial Services</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -42,35 +42,44 @@
   <div id="navbar-container"></div>
 
   <!-- ==================== HERO SECTION ==================== -->
-  <section class="hero-bg relative min-h-[90vh] flex items-center dots-pattern overflow-hidden">
+  <section class="hero-bg relative min-h-[90vh] lg:min-h-[90vh] flex items-center dots-pattern overflow-hidden">
     <!-- Floating gradient blobs -->
+ 
     <div class="gradient-blob blob-1 -top-20 -right-20" data-parallax="0.15"></div>
     <div class="gradient-blob blob-2 bottom-20 -left-20" data-parallax="-0.1"></div>
     <div class="gradient-blob blob-3 top-1/2 right-1/3 opacity-20" data-parallax="0.08"></div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <!-- Mobile-only badge above carousel -->
+        <div class="lg:hidden fade-up order-first mb-2 text-center">
+          <span class="inline-flex items-center gap-2 px-4 py-2 bg-indigo-100/80 backdrop-blur-sm text-indigo-700 rounded-full text-sm font-semibold border border-indigo-200/50">
+            <span class="w-2 h-2 bg-indigo-600 rounded-full animate-pulse"></span>
+            Gujarat's Trusted Financial Partner
+          </span>
+        </div>
+
         <!-- Left: Text content -->
-        <div class="space-y-8">
-          <div class="fade-up">
-            <span class="inline-flex items-center gap-2 px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold">
+        <div class="space-y-5 lg:space-y-8">
+          <div class="hidden lg:block fade-up">
+            <span class="inline-flex items-center gap-2 px-4 py-2 bg-indigo-100/80 backdrop-blur-sm text-indigo-700 rounded-full text-sm font-semibold border border-indigo-200/50">
               <span class="w-2 h-2 bg-indigo-600 rounded-full animate-pulse"></span>
               Gujarat's Trusted Financial Partner
             </span>
           </div>
 
-          <h1 class="fade-up stagger-1 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+          <h1 class="fade-up stagger-1 text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
             <span class="text-slate-900">Simplifying</span>
-            <span class="gradient-text"> Business,</span><br>
+            <span class="gradient-text hero-typed-text"> Business,</span><br>
             <span class="text-slate-900">Amplifying</span>
             <span class="gradient-text-purple"> Growth</span>
           </h1>
 
-          <p class="fade-up stagger-2 text-lg text-slate-600 max-w-xl leading-relaxed">
+          <p class="fade-up stagger-2 text-base lg:text-lg text-slate-600 max-w-xl leading-relaxed">
             Viradiya Associates Private Limited delivers transparent, reliable, and customized loan solutions. With strong bank and NBFC tie-ups, we simplify the borrowing journey for individuals and businesses across India.
           </p>
 
-          <div class="fade-up stagger-3 flex flex-wrap gap-4">
+          <div class="fade-up stagger-3 flex flex-wrap gap-3 lg:gap-4">
             <a href="services.html" class="btn-primary flex items-center gap-2">
               Explore Services
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
@@ -81,8 +90,8 @@
             </a>
           </div>
 
-          <!-- Trust badges -->
-          <div class="fade-up stagger-4 flex items-center gap-6 pt-4">
+          <!-- Trust badges - Desktop -->
+          <div class="fade-up stagger-4 hidden lg:flex items-center gap-6 pt-4">
             <div class="flex items-center gap-2">
               <svg class="w-5 h-5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
               <span class="text-sm text-slate-600 font-medium">RBI Compliant</span>
@@ -96,15 +105,76 @@
               <span class="text-sm text-slate-600 font-medium">Fast Approvals</span>
             </div>
           </div>
+
+          <!-- Mobile floating badges -->
+          <div class="fade-up stagger-4 mobile-hero-badge">
+            <div class="badge-item">
+              <div class="w-8 h-8 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <span class="text-lg font-bold text-slate-800">110+</span>
+                <span class="text-[10px] text-slate-500 block leading-tight">Happy Clients</span>
+              </div>
+            </div>
+            <div class="badge-item">
+              <div class="w-8 h-8 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <span class="text-lg font-bold gradient-text">4+</span>
+                <span class="text-[10px] text-slate-500 block leading-tight">Years Exp.</span>
+              </div>
+            </div>
+            <div class="badge-item">
+              <div class="w-8 h-8 bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <div>
+                <span class="text-lg font-bold text-slate-800">15+</span>
+                <span class="text-[10px] text-slate-500 block leading-tight">Bank Partners</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Right: Hero image / illustration -->
-        <div class="fade-right stagger-2 relative hidden lg:block">
+        <!-- Right: Hero Carousel -->
+        <div class="fade-right stagger-2 relative order-first lg:order-last">
           <div class="relative">
             <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-3xl transform rotate-3"></div>
-            <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Financial team collaboration" class="relative rounded-3xl shadow-2xl w-full object-cover h-[500px]" loading="eager">
+            <div class="hero-carousel relative" id="heroCarousel">
+              <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-slide">
+                  <img src="https://cdn.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg" alt="Financial Growth & Stock Market" loading="eager">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="carousel-slide">
+                  <img src="https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_1280.jpg" alt="Business Startup Planning" loading="lazy">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="carousel-slide">
+                  <img src="https://cdn.pixabay.com/photo/2017/09/07/08/54/money-2724241_1280.jpg" alt="Money & Finance Solutions" loading="lazy">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="carousel-slide">
+                  <img src="https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_1280.jpg" alt="Professional Office Environment" loading="lazy">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="carousel-slide">
+                  <img src="https://cdn.pixabay.com/photo/2017/07/31/11/31/laptop-2557468_1280.jpg" alt="Digital Banking Solutions" loading="lazy">
+                  <div class="slide-overlay"></div>
+                </div>
+              </div>
+              <button class="carousel-nav-btn prev" onclick="moveCarousel(-1)" aria-label="Previous slide">
+                <svg class="w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+              </button>
+              <button class="carousel-nav-btn next" onclick="moveCarousel(1)" aria-label="Next slide">
+                <svg class="w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </button>
+              <div class="carousel-dots" id="carouselDots"></div>
+            </div>
             <!-- Stats card floating -->
-            <div class="absolute -bottom-6 -left-6 glass-card p-5 shadow-xl">
+            <div class="absolute -bottom-6 -left-6 glass-card p-5 shadow-xl hidden lg:block">
               <div class="flex items-center gap-3">
                 <div class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center">
                   <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -116,7 +186,7 @@
               </div>
             </div>
             <!-- Experience badge -->
-            <div class="absolute -top-4 -right-4 glass-card p-4 shadow-xl">
+            <div class="absolute -top-4 -right-4 glass-card p-4 shadow-xl hidden lg:block">
               <div class="text-center">
                 <span class="text-3xl font-bold gradient-text">4+</span>
                 <span class="text-xs text-slate-500 block">Years Experience</span>
@@ -138,34 +208,34 @@
   <!-- ==================== STATS SECTION ==================== -->
   <section class="py-16 bg-white relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-        <div class="fade-up text-center p-6">
-          <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-2xl flex items-center justify-center">
-            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="fade-up stat-card text-center p-6 rounded-2xl bg-gradient-to-br from-indigo-50 to-indigo-100/50 border border-indigo-100 shadow-sm hover:shadow-xl hover:shadow-indigo-100/50 hover:-translate-y-2 transition-all duration-400 group">
+          <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg shadow-indigo-200 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
           <span class="text-4xl font-extrabold gradient-text counter" data-count="4" data-suffix="+">0+</span>
-          <p class="text-slate-500 mt-2 font-medium">Years Experience</p>
+          <p class="text-slate-600 mt-2 font-semibold">Years Experience</p>
         </div>
-        <div class="fade-up stagger-1 text-center p-6">
-          <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-cyan-100 to-cyan-200 rounded-2xl flex items-center justify-center">
-            <svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        <div class="fade-up stagger-1 stat-card text-center p-6 rounded-2xl bg-gradient-to-br from-cyan-50 to-cyan-100/50 border border-cyan-100 shadow-sm hover:shadow-xl hover:shadow-cyan-100/50 hover:-translate-y-2 transition-all duration-400 group">
+          <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center shadow-lg shadow-cyan-200 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
           <span class="text-4xl font-extrabold gradient-text counter" data-count="110" data-suffix="+">0+</span>
-          <p class="text-slate-500 mt-2 font-medium">Happy Clients</p>
+          <p class="text-slate-600 mt-2 font-semibold">Happy Clients</p>
         </div>
-        <div class="fade-up stagger-2 text-center p-6">
-          <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl flex items-center justify-center">
-            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+        <div class="fade-up stagger-2 stat-card text-center p-6 rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100/50 border border-purple-100 shadow-sm hover:shadow-xl hover:shadow-purple-100/50 hover:-translate-y-2 transition-all duration-400 group">
+          <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg shadow-purple-200 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
           </div>
           <span class="text-4xl font-extrabold gradient-text counter" data-count="6" data-suffix="+">0+</span>
-          <p class="text-slate-500 mt-2 font-medium">Loan Products</p>
+          <p class="text-slate-600 mt-2 font-semibold">Loan Products</p>
         </div>
-        <div class="fade-up stagger-3 text-center p-6">
-          <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-2xl flex items-center justify-center">
-            <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <div class="fade-up stagger-3 stat-card text-center p-6 rounded-2xl bg-gradient-to-br from-emerald-50 to-emerald-100/50 border border-emerald-100 shadow-sm hover:shadow-xl hover:shadow-emerald-100/50 hover:-translate-y-2 transition-all duration-400 group">
+          <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg shadow-emerald-200 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
           <span class="text-4xl font-extrabold gradient-text counter" data-count="15" data-suffix="+">0+</span>
-          <p class="text-slate-500 mt-2 font-medium">Bank Partners</p>
+          <p class="text-slate-600 mt-2 font-semibold">Bank Partners</p>
         </div>
       </div>
     </div>
@@ -263,9 +333,9 @@
           </div>
           <h3 class="text-xl font-bold text-slate-800 mb-3">Home & Plot Loans</h3>
           <p class="text-slate-600 leading-relaxed mb-4">Fulfill your dream of owning a home or plot with our expert guidance. We connect you with the best rates from top banks and NBFCs.</p>
-          <a href="services.html#home-loans" class="inline-flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-3 transition-all">
-            Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
+          <button onclick="openServiceModal('home-loans')" class="inline-flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-3 transition-all bg-transparent border-none cursor-pointer p-0">
+            Read More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </button>
         </div>
 
         <!-- Loan Against Property -->
@@ -275,9 +345,9 @@
           </div>
           <h3 class="text-xl font-bold text-slate-800 mb-3">Loan Against Property</h3>
           <p class="text-slate-600 leading-relaxed mb-4">Unlock the value of your property with competitive loan-against-property options. Ideal for business expansion or personal needs.</p>
-          <a href="services.html#lap" class="inline-flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-3 transition-all">
-            Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
+          <button onclick="openServiceModal('lap')" class="inline-flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-3 transition-all bg-transparent border-none cursor-pointer p-0">
+            Read More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </button>
         </div>
 
         <!-- Business & MSME Loans -->
@@ -287,9 +357,9 @@
           </div>
           <h3 class="text-xl font-bold text-slate-800 mb-3">Business & MSME Loans</h3>
           <p class="text-slate-600 leading-relaxed mb-4">Fuel your business growth with tailored MSME and SME financing solutions. Quick approvals and flexible repayment options.</p>
-          <a href="services.html#business-loans" class="inline-flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-3 transition-all">
-            Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
+          <button onclick="openServiceModal('business-loans')" class="inline-flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-3 transition-all bg-transparent border-none cursor-pointer p-0">
+            Read More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </button>
         </div>
 
         <!-- CC & OD Facilities -->
@@ -299,9 +369,9 @@
           </div>
           <h3 class="text-xl font-bold text-slate-800 mb-3">CC & OD Facilities</h3>
           <p class="text-slate-600 leading-relaxed mb-4">Access working capital through Cash Credit and Overdraft facilities. Ensure smooth operations with flexible credit lines.</p>
-          <a href="services.html#cc-od" class="inline-flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-3 transition-all">
-            Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
+          <button onclick="openServiceModal('cc-od')" class="inline-flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-3 transition-all bg-transparent border-none cursor-pointer p-0">
+            Read More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </button>
         </div>
 
         <!-- Personal Loans -->
@@ -311,9 +381,9 @@
           </div>
           <h3 class="text-xl font-bold text-slate-800 mb-3">Personal Loans</h3>
           <p class="text-slate-600 leading-relaxed mb-4">Get quick personal loans with minimal documentation. Perfect for emergencies, education, travel, or personal milestones.</p>
-          <a href="services.html#personal-loans" class="inline-flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-3 transition-all">
-            Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
+          <button onclick="openServiceModal('personal-loans')" class="inline-flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-3 transition-all bg-transparent border-none cursor-pointer p-0">
+            Read More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </button>
         </div>
 
         <!-- Balance Transfer -->
@@ -323,9 +393,22 @@
           </div>
           <h3 class="text-xl font-bold text-slate-800 mb-3">Balance Transfer & Takeover</h3>
           <p class="text-slate-600 leading-relaxed mb-4">Transfer your existing loans to better rates and terms. Reduce your EMI burden with our competitive takeover solutions.</p>
-          <a href="services.html#balance-transfer" class="inline-flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-3 transition-all">
-            Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
+          <button onclick="openServiceModal('balance-transfer')" class="inline-flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-3 transition-all bg-transparent border-none cursor-pointer p-0">
+            Read More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Service Detail Modal -->
+      <div class="service-modal-overlay" id="serviceModalOverlay" onclick="if(event.target===this)closeServiceModal()">
+        <div class="service-modal">
+          <div class="service-modal-header">
+            <h3 class="text-xl font-extrabold text-slate-900" id="serviceModalTitle"></h3>
+            <button class="service-modal-close" onclick="closeServiceModal()">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+          <div class="service-modal-body" id="serviceModalBody"></div>
         </div>
       </div>
     </div>
@@ -389,68 +472,98 @@
       <div class="fade-up marquee-container py-8">
         <div class="marquee-track">
           <!-- First set -->
-          <div class="flex items-center gap-12 px-6">
-            <div class="glass-card px-10 py-6 flex items-center justify-center min-w-[200px] hover:shadow-xl transition-all">
+          <div class="flex items-center gap-8 px-4">
+            <div class="partner-logo-card px-8 py-6 flex items-center justify-center min-w-[200px] rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100/60 border border-blue-200/50 shadow-sm hover:shadow-xl hover:shadow-blue-100/50 hover:-translate-y-2 transition-all duration-300">
               <div class="text-center">
-                <span class="text-2xl font-extrabold text-blue-700 tracking-tight">SBI</span>
-                <span class="block text-xs text-slate-500 mt-1">State Bank of India</span>
+                <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-md">
+                  <span class="text-lg font-extrabold text-white">S</span>
+                </div>
+                <span class="text-lg font-extrabold text-blue-700 tracking-tight block">SBI</span>
+                <span class="block text-[11px] text-slate-500 mt-0.5 font-medium">State Bank of India</span>
               </div>
             </div>
-            <div class="glass-card px-10 py-6 flex items-center justify-center min-w-[200px] hover:shadow-xl transition-all">
+            <div class="partner-logo-card px-8 py-6 flex items-center justify-center min-w-[200px] rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-100/60 border border-blue-200/50 shadow-sm hover:shadow-xl hover:shadow-blue-100/50 hover:-translate-y-2 transition-all duration-300">
               <div class="text-center">
-                <span class="text-2xl font-extrabold text-blue-900 tracking-tight">HDFC</span>
-                <span class="block text-xs text-slate-500 mt-1">HDFC Bank</span>
+                <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-blue-800 to-blue-900 rounded-xl flex items-center justify-center shadow-md">
+                  <span class="text-lg font-extrabold text-white">H</span>
+                </div>
+                <span class="text-lg font-extrabold text-blue-900 tracking-tight block">HDFC</span>
+                <span class="block text-[11px] text-slate-500 mt-0.5 font-medium">HDFC Bank</span>
               </div>
             </div>
-            <div class="glass-card px-10 py-6 flex items-center justify-center min-w-[200px] hover:shadow-xl transition-all">
+            <div class="partner-logo-card px-8 py-6 flex items-center justify-center min-w-[200px] rounded-2xl bg-gradient-to-br from-orange-50 to-orange-100/60 border border-orange-200/50 shadow-sm hover:shadow-xl hover:shadow-orange-100/50 hover:-translate-y-2 transition-all duration-300">
               <div class="text-center">
-                <span class="text-2xl font-extrabold text-orange-600 tracking-tight">ICICI</span>
-                <span class="block text-xs text-slate-500 mt-1">ICICI Bank</span>
+                <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-md">
+                  <span class="text-lg font-extrabold text-white">I</span>
+                </div>
+                <span class="text-lg font-extrabold text-orange-600 tracking-tight block">ICICI</span>
+                <span class="block text-[11px] text-slate-500 mt-0.5 font-medium">ICICI Bank</span>
               </div>
             </div>
-            <div class="glass-card px-10 py-6 flex items-center justify-center min-w-[200px] hover:shadow-xl transition-all">
+            <div class="partner-logo-card px-8 py-6 flex items-center justify-center min-w-[200px] rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100/60 border border-purple-200/50 shadow-sm hover:shadow-xl hover:shadow-purple-100/50 hover:-translate-y-2 transition-all duration-300">
               <div class="text-center">
-                <span class="text-2xl font-extrabold text-purple-800 tracking-tight">AXIS</span>
-                <span class="block text-xs text-slate-500 mt-1">Axis Bank</span>
+                <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-purple-700 to-purple-800 rounded-xl flex items-center justify-center shadow-md">
+                  <span class="text-lg font-extrabold text-white">A</span>
+                </div>
+                <span class="text-lg font-extrabold text-purple-800 tracking-tight block">AXIS</span>
+                <span class="block text-[11px] text-slate-500 mt-0.5 font-medium">Axis Bank</span>
               </div>
             </div>
-            <div class="glass-card px-10 py-6 flex items-center justify-center min-w-[200px] hover:shadow-xl transition-all">
+            <div class="partner-logo-card px-8 py-6 flex items-center justify-center min-w-[200px] rounded-2xl bg-gradient-to-br from-blue-50 to-cyan-100/60 border border-blue-200/50 shadow-sm hover:shadow-xl hover:shadow-blue-100/50 hover:-translate-y-2 transition-all duration-300">
               <div class="text-center">
-                <span class="text-2xl font-extrabold text-blue-600 tracking-tight">BAJAJ</span>
-                <span class="block text-xs text-slate-500 mt-1">Bajaj Finserv</span>
+                <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
+                  <span class="text-lg font-extrabold text-white">B</span>
+                </div>
+                <span class="text-lg font-extrabold text-blue-600 tracking-tight block">BAJAJ</span>
+                <span class="block text-[11px] text-slate-500 mt-0.5 font-medium">Bajaj Finserv</span>
               </div>
             </div>
           </div>
           <!-- Duplicate set for seamless loop -->
-          <div class="flex items-center gap-12 px-6">
-            <div class="glass-card px-10 py-6 flex items-center justify-center min-w-[200px] hover:shadow-xl transition-all">
+          <div class="flex items-center gap-8 px-4">
+            <div class="partner-logo-card px-8 py-6 flex items-center justify-center min-w-[200px] rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100/60 border border-blue-200/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
               <div class="text-center">
-                <span class="text-2xl font-extrabold text-blue-700 tracking-tight">SBI</span>
-                <span class="block text-xs text-slate-500 mt-1">State Bank of India</span>
+                <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-md">
+                  <span class="text-lg font-extrabold text-white">S</span>
+                </div>
+                <span class="text-lg font-extrabold text-blue-700 tracking-tight block">SBI</span>
+                <span class="block text-[11px] text-slate-500 mt-0.5 font-medium">State Bank of India</span>
               </div>
             </div>
-            <div class="glass-card px-10 py-6 flex items-center justify-center min-w-[200px] hover:shadow-xl transition-all">
+            <div class="partner-logo-card px-8 py-6 flex items-center justify-center min-w-[200px] rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-100/60 border border-blue-200/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
               <div class="text-center">
-                <span class="text-2xl font-extrabold text-blue-900 tracking-tight">HDFC</span>
-                <span class="block text-xs text-slate-500 mt-1">HDFC Bank</span>
+                <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-blue-800 to-blue-900 rounded-xl flex items-center justify-center shadow-md">
+                  <span class="text-lg font-extrabold text-white">H</span>
+                </div>
+                <span class="text-lg font-extrabold text-blue-900 tracking-tight block">HDFC</span>
+                <span class="block text-[11px] text-slate-500 mt-0.5 font-medium">HDFC Bank</span>
               </div>
             </div>
-            <div class="glass-card px-10 py-6 flex items-center justify-center min-w-[200px] hover:shadow-xl transition-all">
+            <div class="partner-logo-card px-8 py-6 flex items-center justify-center min-w-[200px] rounded-2xl bg-gradient-to-br from-orange-50 to-orange-100/60 border border-orange-200/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
               <div class="text-center">
-                <span class="text-2xl font-extrabold text-orange-600 tracking-tight">ICICI</span>
-                <span class="block text-xs text-slate-500 mt-1">ICICI Bank</span>
+                <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-md">
+                  <span class="text-lg font-extrabold text-white">I</span>
+                </div>
+                <span class="text-lg font-extrabold text-orange-600 tracking-tight block">ICICI</span>
+                <span class="block text-[11px] text-slate-500 mt-0.5 font-medium">ICICI Bank</span>
               </div>
             </div>
-            <div class="glass-card px-10 py-6 flex items-center justify-center min-w-[200px] hover:shadow-xl transition-all">
+            <div class="partner-logo-card px-8 py-6 flex items-center justify-center min-w-[200px] rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100/60 border border-purple-200/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
               <div class="text-center">
-                <span class="text-2xl font-extrabold text-purple-800 tracking-tight">AXIS</span>
-                <span class="block text-xs text-slate-500 mt-1">Axis Bank</span>
+                <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-purple-700 to-purple-800 rounded-xl flex items-center justify-center shadow-md">
+                  <span class="text-lg font-extrabold text-white">A</span>
+                </div>
+                <span class="text-lg font-extrabold text-purple-800 tracking-tight block">AXIS</span>
+                <span class="block text-[11px] text-slate-500 mt-0.5 font-medium">Axis Bank</span>
               </div>
             </div>
-            <div class="glass-card px-10 py-6 flex items-center justify-center min-w-[200px] hover:shadow-xl transition-all">
+            <div class="partner-logo-card px-8 py-6 flex items-center justify-center min-w-[200px] rounded-2xl bg-gradient-to-br from-blue-50 to-cyan-100/60 border border-blue-200/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
               <div class="text-center">
-                <span class="text-2xl font-extrabold text-blue-600 tracking-tight">BAJAJ</span>
-                <span class="block text-xs text-slate-500 mt-1">Bajaj Finserv</span>
+                <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
+                  <span class="text-lg font-extrabold text-white">B</span>
+                </div>
+                <span class="text-lg font-extrabold text-blue-600 tracking-tight block">BAJAJ</span>
+                <span class="block text-[11px] text-slate-500 mt-0.5 font-medium">Bajaj Finserv</span>
               </div>
             </div>
           </div>
@@ -535,7 +648,9 @@
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="fade-up glass-card p-8">
+        <div class="fade-up testimonial-card relative rounded-2xl p-8 bg-white border border-indigo-100 shadow-md shadow-indigo-50 hover:shadow-xl hover:shadow-indigo-100/40 hover:-translate-y-2 transition-all duration-400 group">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-t-2xl"></div>
+          <svg class="w-8 h-8 text-indigo-200 mb-3" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
           <div class="flex items-center gap-1 mb-4">
             <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
             <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -544,16 +659,18 @@
             <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
           </div>
           <p class="text-slate-600 leading-relaxed mb-6 italic">"Viradiya Associates made our home loan process incredibly smooth. Their transparent approach and expert guidance gave us confidence throughout the journey. Highly recommended!"</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm">RP</div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+            <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-indigo-200">RP</div>
             <div>
-              <span class="text-sm font-semibold text-slate-800 block">Rajesh Patel</span>
-              <span class="text-xs text-slate-500">Home Loan - Ahmedabad</span>
+              <span class="text-sm font-bold text-slate-800 block">Rajesh Patel</span>
+              <span class="text-xs text-indigo-500 font-medium">Home Loan - Ahmedabad</span>
             </div>
           </div>
         </div>
 
-        <div class="fade-up stagger-1 glass-card p-8">
+        <div class="fade-up stagger-1 testimonial-card relative rounded-2xl p-8 bg-white border border-cyan-100 shadow-md shadow-cyan-50 hover:shadow-xl hover:shadow-cyan-100/40 hover:-translate-y-2 transition-all duration-400 group">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-t-2xl"></div>
+          <svg class="w-8 h-8 text-cyan-200 mb-3" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
           <div class="flex items-center gap-1 mb-4">
             <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
             <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -562,16 +679,18 @@
             <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
           </div>
           <p class="text-slate-600 leading-relaxed mb-6 italic">"As a small business owner, getting a MSME loan seemed daunting. Viradiya Associates handled everything from documentation to approval. Fast, efficient, and trustworthy!"</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-full flex items-center justify-center text-white font-bold text-sm">AS</div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+            <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-cyan-200">AS</div>
             <div>
-              <span class="text-sm font-semibold text-slate-800 block">Amit Shah</span>
-              <span class="text-xs text-slate-500">Business Loan - Surat</span>
+              <span class="text-sm font-bold text-slate-800 block">Amit Shah</span>
+              <span class="text-xs text-cyan-600 font-medium">Business Loan - Surat</span>
             </div>
           </div>
         </div>
 
-        <div class="fade-up stagger-2 glass-card p-8">
+        <div class="fade-up stagger-2 testimonial-card relative rounded-2xl p-8 bg-white border border-amber-100 shadow-md shadow-amber-50 hover:shadow-xl hover:shadow-amber-100/40 hover:-translate-y-2 transition-all duration-400 group">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-500 to-orange-500 rounded-t-2xl"></div>
+          <svg class="w-8 h-8 text-amber-200 mb-3" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
           <div class="flex items-center gap-1 mb-4">
             <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
             <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -580,11 +699,11 @@
             <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
           </div>
           <p class="text-slate-600 leading-relaxed mb-6 italic">"I transferred my existing loan through Viradiya Associates and saved significantly on EMI. Their team's professionalism and dedication is commendable. Truly a reliable partner."</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm">PM</div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+            <div class="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-amber-200">PM</div>
             <div>
-              <span class="text-sm font-semibold text-slate-800 block">Priya Mehta</span>
-              <span class="text-xs text-slate-500">Balance Transfer - Vadodara</span>
+              <span class="text-sm font-bold text-slate-800 block">Priya Mehta</span>
+              <span class="text-xs text-amber-600 font-medium">Balance Transfer - Vadodara</span>
             </div>
           </div>
         </div>
@@ -611,21 +730,55 @@
           <form id="enquiryForm" class="glass-card p-8 space-y-6">
             <div class="grid sm:grid-cols-2 gap-6">
               <div>
-                <label for="formName" class="block text-sm font-semibold text-slate-700 mb-2">Full Name</label>
+                <label for="formName" class="block text-sm font-semibold text-slate-700 mb-2">Full Name <span class="text-red-500">*</span></label>
                 <input type="text" id="formName" class="form-input" placeholder="John Doe" required>
               </div>
               <div>
                 <label for="formEmail" class="block text-sm font-semibold text-slate-700 mb-2">Email Address</label>
-                <input type="email" id="formEmail" class="form-input" placeholder="john@example.com" required>
+                <input type="email" id="formEmail" class="form-input" placeholder="john@example.com">
               </div>
             </div>
             <div class="grid sm:grid-cols-2 gap-6">
               <div>
-                <label for="formPhone" class="block text-sm font-semibold text-slate-700 mb-2">Phone Number</label>
-                <input type="tel" id="formPhone" class="form-input" placeholder="+91 98765 43210" required>
+                <label for="formPhone" class="block text-sm font-semibold text-slate-700 mb-2">Phone Number <span class="text-red-500">*</span></label>
+                <div class="phone-input-group">
+                  <select class="country-code-select" id="formCountryCode">
+                    <option value="+91">+91</option>
+                    <option value="+1">+1</option>
+                    <option value="+44">+44</option>
+                    <option value="+61">+61</option>
+                    <option value="+971">+971</option>
+                    <option value="+65">+65</option>
+                    <option value="+81">+81</option>
+                    <option value="+49">+49</option>
+                    <option value="+33">+33</option>
+                    <option value="+86">+86</option>
+                    <option value="+55">+55</option>
+                    <option value="+27">+27</option>
+                    <option value="+234">+234</option>
+                    <option value="+254">+254</option>
+                    <option value="+966">+966</option>
+                    <option value="+974">+974</option>
+                    <option value="+968">+968</option>
+                    <option value="+60">+60</option>
+                    <option value="+63">+63</option>
+                    <option value="+977">+977</option>
+                    <option value="+94">+94</option>
+                    <option value="+880">+880</option>
+                    <option value="+92">+92</option>
+                    <option value="+62">+62</option>
+                    <option value="+66">+66</option>
+                    <option value="+84">+84</option>
+                    <option value="+82">+82</option>
+                    <option value="+39">+39</option>
+                    <option value="+34">+34</option>
+                    <option value="+7">+7</option>
+                  </select>
+                  <input type="tel" id="formPhone" class="form-input" placeholder="9876543210" required maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+                </div>
               </div>
               <div>
-                <label for="formService" class="block text-sm font-semibold text-slate-700 mb-2">Product & Service</label>
+                <label for="formService" class="block text-sm font-semibold text-slate-700 mb-2">Product & Service <span class="text-red-500">*</span></label>
                 <select id="formService" class="form-input" required>
                   <option value="">Select a service</option>
                   <option value="Home Loans & Plot Loans">Home Loans & Plot Loans</option>
@@ -639,7 +792,7 @@
               </div>
             </div>
             <div>
-              <label for="formMessage" class="block text-sm font-semibold text-slate-700 mb-2">Message</label>
+              <label for="formMessage" class="block text-sm font-semibold text-slate-700 mb-2">Message <span class="text-red-500">*</span></label>
               <textarea id="formMessage" rows="4" class="form-input" placeholder="Tell us about your financial needs..." required></textarea>
             </div>
             <button type="submit" class="btn-primary w-full flex items-center justify-center gap-2 text-center">
@@ -724,6 +877,115 @@
   <script src="js/animations.js"></script>
   <script src="js/form.js"></script>
   <script src="js/main.js"></script>
+
+  <!-- Hero Carousel -->
+  <script>
+  (function() {
+    let currentSlide = 0;
+    const totalSlides = 5;
+    let autoSlideTimer;
+
+    function initCarousel() {
+      const dotsContainer = document.getElementById('carouselDots');
+      if (!dotsContainer) return;
+      for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('button');
+        dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        dot.onclick = function() { goToSlide(i); };
+        dotsContainer.appendChild(dot);
+      }
+      startAutoSlide();
+      const carousel = document.getElementById('heroCarousel');
+      if (carousel) {
+        carousel.addEventListener('mouseenter', stopAutoSlide);
+        carousel.addEventListener('mouseleave', startAutoSlide);
+      }
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      const track = document.getElementById('carouselTrack');
+      if (track) track.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
+      const dots = document.querySelectorAll('.carousel-dot');
+      dots.forEach(function(d, i) {
+        d.classList.toggle('active', i === currentSlide);
+      });
+    }
+
+    window.moveCarousel = function(dir) {
+      let next = currentSlide + dir;
+      if (next < 0) next = totalSlides - 1;
+      if (next >= totalSlides) next = 0;
+      goToSlide(next);
+    };
+
+    function startAutoSlide() {
+      stopAutoSlide();
+      autoSlideTimer = setInterval(function() { window.moveCarousel(1); }, 4000);
+    }
+
+    function stopAutoSlide() {
+      if (autoSlideTimer) clearInterval(autoSlideTimer);
+    }
+
+    document.addEventListener('DOMContentLoaded', initCarousel);
+  })();
+  </script>
+
+  <!-- Service Modals -->
+  <script>
+  var serviceData = {
+    'home-loans': {
+      title: 'Home Loans & Plot Loans',
+      color: 'blue',
+      content: '<div class="space-y-5"><p class="text-slate-600 text-base leading-relaxed">Turn your dream of owning a home into reality with Viradiya Associates. We partner with India\'s top banks and NBFCs to offer you the best home loan and plot loan options with competitive interest rates, flexible tenures, and minimal hassle.</p><h4 class="text-lg font-bold text-slate-900">Key Features</h4><ul class="space-y-2 text-slate-600"><li class="flex items-start gap-2"><svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Competitive interest rates starting from 8.35% p.a.</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Flexible repayment tenure up to 30 years</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Up to 90% financing of property value</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Quick processing and faster approvals within 7-10 days</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Minimal documentation required</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Available for salaried, self-employed, and NRI borrowers</li></ul><h4 class="text-lg font-bold text-slate-900 mt-4">Eligible Property Types</h4><div class="flex flex-wrap gap-2"><span class="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium">Ready-to-move Flats</span><span class="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium">Under-construction</span><span class="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium">Independent Houses</span><span class="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium">Residential Plots</span><span class="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium">Home Renovation</span><span class="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium">Home Extension</span></div><h4 class="text-lg font-bold text-slate-900 mt-4">Documents Required</h4><p class="text-slate-600 text-sm">Identity Proof (Aadhaar/PAN), Address Proof, Income Proof (Salary slips/ITR), Bank Statements (last 6 months), Property Documents, Passport-size Photos.</p><div class="mt-6"><a href="contact.html" class="btn-primary inline-flex items-center gap-2">Apply Now <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></div></div>'
+    },
+    'lap': {
+      title: 'Loan Against Property (LAP)',
+      color: 'emerald',
+      content: '<div class="space-y-5"><p class="text-slate-600 text-base leading-relaxed">Unlock the value of your property to meet personal or business financial needs. Our LAP solutions through trusted banks and NBFCs offer high loan amounts at attractive interest rates with flexible repayment options.</p><h4 class="text-lg font-bold text-slate-900">Key Features</h4><ul class="space-y-2 text-slate-600"><li class="flex items-start gap-2"><svg class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Loan amount up to 70% of property market value</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Lower interest rates than unsecured loans (9% onwards)</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Tenure up to 15-20 years for comfortable repayment</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Both residential and commercial property accepted</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Multi-purpose usage: business expansion, education, weddings, medical</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Continue to use your property while availing the loan</li></ul><h4 class="text-lg font-bold text-slate-900 mt-4">Ideal For</h4><div class="flex flex-wrap gap-2"><span class="px-3 py-1.5 bg-emerald-50 text-emerald-700 rounded-lg text-sm font-medium">Business Expansion</span><span class="px-3 py-1.5 bg-emerald-50 text-emerald-700 rounded-lg text-sm font-medium">Higher Education</span><span class="px-3 py-1.5 bg-emerald-50 text-emerald-700 rounded-lg text-sm font-medium">Medical Expenses</span><span class="px-3 py-1.5 bg-emerald-50 text-emerald-700 rounded-lg text-sm font-medium">Debt Consolidation</span><span class="px-3 py-1.5 bg-emerald-50 text-emerald-700 rounded-lg text-sm font-medium">Wedding Expenses</span></div><div class="mt-6"><a href="contact.html" class="btn-primary inline-flex items-center gap-2">Apply Now <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></div></div>'
+    },
+    'business-loans': {
+      title: 'Business Loans & MSME/SME Financing',
+      color: 'amber',
+      content: '<div class="space-y-5"><p class="text-slate-600 text-base leading-relaxed">Fuel your business growth with tailored financing solutions. We connect MSMEs and SMEs with the right funding from leading banks and NBFCs, including government scheme benefits under MUDRA and CGTMSE.</p><h4 class="text-lg font-bold text-slate-900">Key Features</h4><ul class="space-y-2 text-slate-600"><li class="flex items-start gap-2"><svg class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Secured and unsecured business loan options</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Loan amounts from &#8377;50,000 to &#8377;50 Crore+</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Quick disbursement within 5-7 working days</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Flexible repayment options with moratorium period</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>MUDRA loan assistance (Shishu, Kishore, Tarun)</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>CGTMSE scheme benefits for collateral-free loans</li></ul><h4 class="text-lg font-bold text-slate-900 mt-4">Business Types Supported</h4><div class="flex flex-wrap gap-2"><span class="px-3 py-1.5 bg-amber-50 text-amber-700 rounded-lg text-sm font-medium">Manufacturing</span><span class="px-3 py-1.5 bg-amber-50 text-amber-700 rounded-lg text-sm font-medium">Trading</span><span class="px-3 py-1.5 bg-amber-50 text-amber-700 rounded-lg text-sm font-medium">Services</span><span class="px-3 py-1.5 bg-amber-50 text-amber-700 rounded-lg text-sm font-medium">Retail</span><span class="px-3 py-1.5 bg-amber-50 text-amber-700 rounded-lg text-sm font-medium">Startups</span><span class="px-3 py-1.5 bg-amber-50 text-amber-700 rounded-lg text-sm font-medium">Professionals</span></div><div class="mt-6"><a href="contact.html" class="btn-primary inline-flex items-center gap-2">Apply Now <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></div></div>'
+    },
+    'cc-od': {
+      title: 'Cash Credit (CC) & Overdraft (OD) Facilities',
+      color: 'rose',
+      content: '<div class="space-y-5"><p class="text-slate-600 text-base leading-relaxed">Maintain smooth business operations with our CC and OD facility guidance. Access working capital exactly when you need it. Unlike term loans, you only pay interest on the amount utilized, making it highly cost-effective for businesses with fluctuating cash needs.</p><h4 class="text-lg font-bold text-slate-900">Key Features</h4><ul class="space-y-2 text-slate-600"><li class="flex items-start gap-2"><svg class="w-5 h-5 text-rose-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Revolving credit facility - withdraw and repay as needed</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-rose-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Pay interest only on the utilized amount, not entire sanctioned limit</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-rose-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Ideal for managing day-to-day business operations</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-rose-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Annual renewal with limit enhancement options</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-rose-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Available against stock, book debts, property, or FD</li></ul><h4 class="text-lg font-bold text-slate-900 mt-4">CC vs OD - When to Choose</h4><div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2"><div class="p-4 bg-rose-50 rounded-xl"><h5 class="font-bold text-rose-800 mb-1">Cash Credit (CC)</h5><p class="text-sm text-rose-700">Best for trading and manufacturing businesses needing working capital against stock/inventory.</p></div><div class="p-4 bg-indigo-50 rounded-xl"><h5 class="font-bold text-indigo-800 mb-1">Overdraft (OD)</h5><p class="text-sm text-indigo-700">Best for service businesses and professionals needing flexible credit against property or FD.</p></div></div><div class="mt-6"><a href="contact.html" class="btn-primary inline-flex items-center gap-2">Apply Now <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></div></div>'
+    },
+    'personal-loans': {
+      title: 'Personal Loans',
+      color: 'violet',
+      content: '<div class="space-y-5"><p class="text-slate-600 text-base leading-relaxed">Quick personal loans for all your personal needs - emergencies, weddings, education, travel, home renovation, or medical expenses. We ensure minimal documentation and fast approval through our network of banks and NBFCs.</p><h4 class="text-lg font-bold text-slate-900">Key Features</h4><ul class="space-y-2 text-slate-600"><li class="flex items-start gap-2"><svg class="w-5 h-5 text-violet-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>No collateral or security required - 100% unsecured</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-violet-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Quick approval within 24-48 hours</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-violet-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Loan amount from &#8377;50,000 to &#8377;40 Lakhs</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-violet-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Flexible EMI options with tenure up to 5 years</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-violet-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Available for both salaried and self-employed individuals</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-violet-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Minimal documentation - PAN, Aadhaar, bank statement, salary slips</li></ul><h4 class="text-lg font-bold text-slate-900 mt-4">Eligibility</h4><div class="flex flex-wrap gap-2"><span class="px-3 py-1.5 bg-violet-50 text-violet-700 rounded-lg text-sm font-medium">Minimum age: 21 years</span><span class="px-3 py-1.5 bg-violet-50 text-violet-700 rounded-lg text-sm font-medium">Min income: &#8377;15,000/month</span><span class="px-3 py-1.5 bg-violet-50 text-violet-700 rounded-lg text-sm font-medium">CIBIL: 650+</span><span class="px-3 py-1.5 bg-violet-50 text-violet-700 rounded-lg text-sm font-medium">Work exp: 1 year+</span></div><div class="mt-6"><a href="contact.html" class="btn-primary inline-flex items-center gap-2">Apply Now <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></div></div>'
+    },
+    'balance-transfer': {
+      title: 'Balance Transfer & Takeover Cases',
+      color: 'teal',
+      content: '<div class="space-y-5"><p class="text-slate-600 text-base leading-relaxed">Already have a loan with high interest? Transfer it to a better lender and save significantly. We analyze your existing loan, find you the best alternative rates, and handle the entire transfer process seamlessly.</p><h4 class="text-lg font-bold text-slate-900">Key Features</h4><ul class="space-y-2 text-slate-600"><li class="flex items-start gap-2"><svg class="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Significant EMI reduction - save lakhs over loan tenure</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Better interest rates from competing lenders</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Top-up loan facility available along with balance transfer</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Hassle-free transfer process handled end-to-end</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Available for home loans, LAP, business loans, and personal loans</li></ul><h4 class="text-lg font-bold text-slate-900 mt-4">Savings Example</h4><div class="p-4 bg-teal-50 rounded-xl"><p class="text-sm text-teal-800">On a &#8377;50 Lakh home loan with 20-year tenure, reducing interest rate by just 1% (e.g., 10% to 9%) can save approximately <strong>&#8377;7-8 Lakhs</strong> in total interest over the loan period.</p></div><h4 class="text-lg font-bold text-slate-900 mt-4">Loan Types Eligible for Transfer</h4><div class="flex flex-wrap gap-2"><span class="px-3 py-1.5 bg-teal-50 text-teal-700 rounded-lg text-sm font-medium">Home Loans</span><span class="px-3 py-1.5 bg-teal-50 text-teal-700 rounded-lg text-sm font-medium">LAP</span><span class="px-3 py-1.5 bg-teal-50 text-teal-700 rounded-lg text-sm font-medium">Business Loans</span><span class="px-3 py-1.5 bg-teal-50 text-teal-700 rounded-lg text-sm font-medium">Personal Loans</span></div><div class="mt-6"><a href="contact.html" class="btn-primary inline-flex items-center gap-2">Apply Now <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></div></div>'
+    }
+  };
+
+  function openServiceModal(serviceId) {
+    var data = serviceData[serviceId];
+    if (!data) return;
+    document.getElementById('serviceModalTitle').textContent = data.title;
+    document.getElementById('serviceModalBody').innerHTML = data.content;
+    document.getElementById('serviceModalOverlay').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeServiceModal() {
+    document.getElementById('serviceModalOverlay').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeServiceModal();
+  });
+  </script>
 
   <!-- Structured Data for SEO -->
   <script type="application/ld+json">

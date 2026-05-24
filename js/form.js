@@ -7,6 +7,23 @@ function initEnquiryForm() {
   const form = document.getElementById('enquiryForm');
   if (!form) return;
 
+  const phoneInput = form.querySelector('#formPhone');
+  if (phoneInput) {
+    phoneInput.addEventListener('input', function() {
+      this.value = this.value.replace(/[^0-9]/g, '');
+      if (this.value.length > 10) this.value = this.value.slice(0, 10);
+    });
+    phoneInput.addEventListener('keypress', function(e) {
+      if (!/[0-9]/.test(e.key)) e.preventDefault();
+    });
+    phoneInput.addEventListener('paste', function(e) {
+      e.preventDefault();
+      var paste = (e.clipboardData || window.clipboardData).getData('text');
+      var digits = paste.replace(/[^0-9]/g, '').slice(0, 10);
+      this.value = digits;
+    });
+  }
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -14,30 +31,44 @@ function initEnquiryForm() {
     const originalText = submitBtn.innerHTML;
     const statusEl = document.getElementById('formStatus');
 
-    // Gather form values
     const name = form.querySelector('#formName').value.trim();
-    const email = form.querySelector('#formEmail').value.trim();
+    const email = form.querySelector('#formEmail') ? form.querySelector('#formEmail').value.trim() : '';
     const phone = form.querySelector('#formPhone').value.trim();
+    const countryCodeEl = form.querySelector('#formCountryCode');
+    const countryCode = countryCodeEl ? countryCodeEl.value : '+91';
     const service = form.querySelector('#formService').value;
     const message = form.querySelector('#formMessage').value.trim();
 
-    // Basic validation
-    if (!name || !email || !phone || !service || !message) {
-      showStatus(statusEl, 'Please fill in all fields.', 'error');
+    if (!name) {
+      showStatus(statusEl, 'Please enter your full name.', 'error');
       return;
     }
 
-    if (!isValidEmail(email)) {
+    if (!phone) {
+      showStatus(statusEl, 'Please enter your phone number.', 'error');
+      return;
+    }
+
+    if (!/^\d{10}$/.test(phone)) {
+      showStatus(statusEl, 'Please enter a valid 10-digit phone number.', 'error');
+      return;
+    }
+
+    if (!service) {
+      showStatus(statusEl, 'Please select a product or service.', 'error');
+      return;
+    }
+
+    if (!message) {
+      showStatus(statusEl, 'Please enter your message.', 'error');
+      return;
+    }
+
+    if (email && !isValidEmail(email)) {
       showStatus(statusEl, 'Please enter a valid email address.', 'error');
       return;
     }
 
-    if (!isValidPhone(phone)) {
-      showStatus(statusEl, 'Please enter a valid phone number.', 'error');
-      return;
-    }
-
-    // Show loading state
     submitBtn.disabled = true;
     submitBtn.innerHTML = `
       <svg class="animate-spin w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24">
@@ -48,19 +79,22 @@ function initEnquiryForm() {
     `;
 
     try {
+      const fullPhone = countryCode + ' ' + phone;
+      const fields = {
+        'Name': name,
+        'Phone': fullPhone,
+        'Service': service,
+        'Message': message
+      };
+      if (email) fields['Email'] = email;
+
       const response = await fetch('https://piwebtechnology.com/send-form-mail?company=viradiyaassociates', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           to: 'info@viradiyaassociates.co.in',
-          subject: `Enquiry Form - ${service}`,
-          fields: {
-            'Name': name,
-            'Email': email,
-            'Phone': phone,
-            'Service': service,
-            'Message': message
-          }
+          subject: `Contact Form - ${service}`,
+          fields: fields
         })
       });
 
@@ -99,10 +133,6 @@ function showStatus(el, message, type) {
 
 function isValidEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
-
-function isValidPhone(phone) {
-  return /^[+]?[\d\s-]{8,15}$/.test(phone);
 }
 
 document.addEventListener('DOMContentLoaded', initEnquiryForm);
